@@ -18,12 +18,3 @@ ZADACI:
 
 5. Napraviti rutu za dodavanje nove narudžbe koja prima array od proizvoda.
     Order -> AddOrder (prima listu JSON-a [{}, {}] te kreira narudzbu)
-
-
-MOJI KOMENTARI :)
-
-kod adresa za dostavu, pretpostavka je da nas, kao trgovinu, ne zanima adresa stanovanja, vec samo adresa za dostavu.
-
-priceList i contractList:
-shvatio sam to kao: priceList je cjenovnik od nekakve trgovine.
-kupac moze kreirati contractList, tj. ugovor sa nekom trgovinom, sa ugovorenim cijenama. 
