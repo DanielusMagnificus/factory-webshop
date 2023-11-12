@@ -1,0 +1,428 @@
+{
+	"info": {
+		"_postman_id": "383b3d6b-64e3-48ca-a0db-cbb69e55445c",
+		"name": "FactoryWebShopApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13324671"
+	},
+	"item": [
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "ListProducts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/products?results=12&page=1&sortColumn=name&sortDirection=desc",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"products"
+							],
+							"query": [
+								{
+									"key": "results",
+									"value": "12"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "sortColumn",
+									"value": "name"
+								},
+								{
+									"key": "sortDirection",
+									"value": "desc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/products/product/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"products",
+								"product",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ContractPriceList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/products/user/1/contract-price-list?category=Computers&priceEnd=58&sortColumn=price&sortDirection=desc",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"products",
+								"user",
+								"1",
+								"contract-price-list"
+							],
+							"query": [
+								{
+									"key": "category",
+									"value": "Computers"
+								},
+								{
+									"key": "priceEnd",
+									"value": "58"
+								},
+								{
+									"key": "sortColumn",
+									"value": "price"
+								},
+								{
+									"key": "sortDirection",
+									"value": "desc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ContractList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/products/user/3/contract-list?sortColumn=price&sortDirection=desc",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"products",
+								"user",
+								"3",
+								"contract-list"
+							],
+							"query": [
+								{
+									"key": "sortColumn",
+									"value": "price"
+								},
+								{
+									"key": "sortDirection",
+									"value": "desc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PriceList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/products/price-list?sortColumn=price&sortDirection=desc&page=2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"products",
+								"price-list"
+							],
+							"query": [
+								{
+									"key": "sortColumn",
+									"value": "price"
+								},
+								{
+									"key": "sortDirection",
+									"value": "desc"
+								},
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "ListUsers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/list-all-users",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"list-all-users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RegisterUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/registration?firstName=test&lastName=example&phoneNumber=12345&email=mail@gmail.ccom",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"registration"
+							],
+							"query": [
+								{
+									"key": "firstName",
+									"value": "test"
+								},
+								{
+									"key": "lastName",
+									"value": "example"
+								},
+								{
+									"key": "phoneNumber",
+									"value": "12345"
+								},
+								{
+									"key": "email",
+									"value": "mail@gmail.ccom"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddDeliveryAddress",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/user/1/add-delivery-address?countryCode=AT&address=someAddress&apartmentNumber=11",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"1",
+								"add-delivery-address"
+							],
+							"query": [
+								{
+									"key": "countryCode",
+									"value": "AT"
+								},
+								{
+									"key": "address",
+									"value": "someAddress"
+								},
+								{
+									"key": "apartmentNumber",
+									"value": "11"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "ListCategories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/category/list-categories",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"category",
+								"list-categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListProducts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/category/list-products?results=4&page=2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"category",
+								"list-products"
+							],
+							"query": [
+								{
+									"key": "results",
+									"value": "4"
+								},
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "AddOrder",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"id\": 5,\r\n        \"name\": \"Product4\",\r\n        \"description\": \"Description for Product4\",\r\n        \"sku\": \"HR-ZGZTX-BLN-4\",\r\n        \"published\": \"2023-11-12 11:59:44\"\r\n    },\r\n    {\r\n        \"id\": 6,\r\n        \"name\": \"Product5\",\r\n        \"description\": \"Description for Product5\",\r\n        \"sku\": \"HR-ZGZTX-BLN-5\",\r\n        \"published\": \"2023-11-12 11:59:44\"\r\n    },\r\n    {\r\n        \"id\": 7,\r\n        \"name\": \"Product6\",\r\n        \"description\": \"Description for Product6\",\r\n        \"sku\": \"HR-ZGZTX-BLN-6\",\r\n        \"published\": \"2023-11-12 11:59:44\"\r\n    },\r\n    {\r\n        \"id\": 8,\r\n        \"name\": \"Product7\",\r\n        \"description\": \"Description for Product7\",\r\n        \"sku\": \"HR-ZGZTX-BLN-7\",\r\n        \"published\": \"2023-11-12 11:59:44\"\r\n    }\r\n]"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/order/user/1/add-order?addressId=1&discount=CHRISTMAS_DISCOUNT",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"order",
+								"user",
+								"1",
+								"add-order"
+							],
+							"query": [
+								{
+									"key": "addressId",
+									"value": "1"
+								},
+								{
+									"key": "discount",
+									"value": "CHRISTMAS_DISCOUNT"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ActivatedDiscounts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/order/1/discounts",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"order",
+								"1",
+								"discounts"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

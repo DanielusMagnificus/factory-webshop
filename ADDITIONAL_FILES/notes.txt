@@ -1,0 +1,29 @@
+
+
+ZADACI:
+
+1. Napraviti rutu za izlistavanje svih proizvoda s Paginacijom.
+    Product -> ListProducts
+
+2. Napraviti rutu za izlistavanje proizvoda unutar kategorije s paginacijom.
+    Category -> ListProducts
+
+3. Napraviti rutu za jedan proizvod.
+    Product -> Details
+
+4. Napraviti rutu za filtriranje proizvoda po cijeni, nazivu i kategoriji te sortiranje proizvoda po cijeni i po nazivu silazno/uzlazno. Pripaziti na contract i price liste.
+    Product -> ContractPriceList (izlistava sve proizvode sa ugovorenim cijenama i ostatkom iz price_list, koji spadaju u kategoriju ili njihovu djecu)
+    Product -> ContractList (izlistava samo ugovorene cijene proizvoda koji spadaju u kategoriju ili njihovu djecu)
+    Product -> PriceList (izlistava samo proizvode sa pripadajucim cijenama iz price_list tablice)
+
+5. Napraviti rutu za dodavanje nove narudžbe koja prima array od proizvoda.
+    Order -> AddOrder (prima listu JSON-a [{}, {}] te kreira narudzbu)
+
+
+MOJI KOMENTARI :)
+
+kod adresa za dostavu, pretpostavka je da nas, kao trgovinu, ne zanima adresa stanovanja, vec samo adresa za dostavu.
+
+priceList i contractList:
+shvatio sam to kao: priceList je cjenovnik od nekakve trgovine.
+kupac moze kreirati contractList, tj. ugovor sa nekom trgovinom, sa ugovorenim cijenama. 
